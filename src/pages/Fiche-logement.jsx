@@ -1,7 +1,26 @@
+import Carrousel from "../components/Carrousel"
+import Footer from "../components/Footer"
+import Header from "../components/Header"
+import Informations from "../components/Informations"
 
 
 const FicheLogement = () => (
-    <h1>Fiche logement</h1>
+    <>
+        <header>
+            <Header />
+        </header>
+        <main>
+            <section>
+                <Carrousel />
+            </section>
+            <section>
+                <Informations />
+            </section>
+        </main>
+        <Footer>
+            <Footer />
+        </Footer>
+    </>
 )
 
 export default FicheLogement
