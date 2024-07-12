@@ -1,14 +1,9 @@
-import Banner from "../components/Banner"
-import Collapses from "../components/Collapses"
-import Footer from "../components/Footer"
-import Header from "../components/Header"
+import Banner from "../components/Banner/Banner"
+import Collapses from "../components/Collapses/Collapses"
 
 
 const APropos = () => (
     <>
-        <header>
-            <Header />
-        </header>
         <main>
             <section>
                 <Banner />
@@ -17,9 +12,6 @@ const APropos = () => (
                 <Collapses />
             </section>
         </main>
-        <Footer>
-            <Footer />
-        </Footer>
     </>
 )
 

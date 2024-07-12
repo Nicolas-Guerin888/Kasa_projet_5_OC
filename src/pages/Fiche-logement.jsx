@@ -1,14 +1,9 @@
-import Carrousel from "../components/Carrousel"
-import Footer from "../components/Footer"
-import Header from "../components/Header"
-import Informations from "../components/Informations"
+import Carrousel from "../components/Carrousel/Carrousel"
+import Informations from "../components/Informations/Informations"
 
 
 const FicheLogement = () => (
     <>
-        <header>
-            <Header />
-        </header>
         <main>
             <section>
                 <Carrousel />
@@ -17,9 +12,6 @@ const FicheLogement = () => (
                 <Informations />
             </section>
         </main>
-        <Footer>
-            <Footer />
-        </Footer>
     </>
 )
 

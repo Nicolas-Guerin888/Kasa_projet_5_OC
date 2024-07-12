@@ -1,14 +1,8 @@
-import { Fragment } from 'react'
-import Header from '../components/Header'
-import Banner from '../components/Banner'
-import RentalList from '../components/RentalList'
-import Footer from '../components/Footer'
+import Banner from '../components/Banner/Banner'
+import RentalList from '../components/RentalList/RentalList'
 
 const Home = () => (
     <>
-        <header>
-            <Header />
-        </header>
         <main>
             <section>
                 <Banner />
@@ -17,9 +11,6 @@ const Home = () => (
                 <RentalList />
             </section>
         </main>
-        <Footer>
-            <Footer />
-        </Footer>
     </>
 )
 
