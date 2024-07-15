@@ -1,7 +1,14 @@
-
+import Card from '../RentalCard/RentalCard'
 
 const RentalList = () => (
-    <h1>RentalList</h1>
+    <section className="rentalList">
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+    </section>
 )
 
 export default RentalList

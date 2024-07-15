@@ -1,7 +1,12 @@
-
+import imageCard from '../../assets/Rectangle 1.png'
 
 const RentalCard = () => (
-    <h1>RentalCard</h1>
+    <div className="card">
+        <img className="card__img" src={imageCard} alt="" />
+        <div className='card__content'>
+            <h3 className="card__title">Titre de la location</h3>
+        </div>
+    </div>
 )
 
 export default RentalCard

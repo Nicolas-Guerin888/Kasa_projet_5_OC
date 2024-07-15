@@ -1,0 +1,16 @@
+.rentalList {
+    background-color: rgba(246, 246, 246, 1);
+    border-radius: 25px;
+    margin: 40px 100px 40px 100px;
+    padding: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 55px;
+
+    @media(max-width: 731px){
+        margin: 24px 20px 0 20px;
+    }
+}
