@@ -23,7 +23,12 @@
     &__link {
         text-decoration: none;
         color: inherit;
+        &.active-link {
+            text-decoration: underline;
+        }
+        
     }
+
 
     @media(max-width: 731px){
         margin: 20px 20px 0 20px;
@@ -44,3 +49,5 @@
         }
     }
 }
+
+

@@ -1,0 +1,42 @@
+@import '../../settings.scss';
+
+.error {
+    color: $main-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    &__title {
+        font-size: 288px;
+        font-weight: 700;
+        margin-top: 88px;
+    }
+
+    &__text {
+        font-size: 36px;
+        font-weight: 500;
+        margin-top: 96px;
+    }
+
+    &__link {
+        font-size: 18px;
+        font-weight: 500;
+        color:black;
+        margin-top: 150px;
+        margin-bottom: 136px;
+    }
+
+    @media(max-width: 731px){
+        &__title {
+            font-size: 96px;
+        }
+        &__text {
+            font-size: 18px;
+        }
+        &__link {
+            font-size: 14px;
+        }
+    }
+}

@@ -1,6 +1,6 @@
 import logoDesktop from '../../assets/LOGO.desktop.png'
 import logoMobile from '../../assets/LOGO.mobile.png'
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
 const Header = () => (
     <>
@@ -14,14 +14,16 @@ const Header = () => (
             <nav className='header__nav'>
                 <ul className='header__list'>
                     <li className='header__item'>
-                        <Link to="/" className='header__link'>
+                        <NavLink to="/" className={({ isActive }) => isActive ? 'header__link active-link' : 'header__link'}
+                        >
                             Accueil
-                        </Link>
+                        </NavLink>
                     </li>
                     <li className='header__item'>
-                        <Link to="/a-propos" className='header__link'>
+                        <NavLink to="/a-propos" className={({ isActive }) => isActive ? 'header__link active-link' : 'header__link'}
+                        >
                             À Propos
-                        </Link>
+                        </NavLink>
                     </li>
                 </ul>
             </nav>
