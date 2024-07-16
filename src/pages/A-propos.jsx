@@ -1,16 +1,16 @@
 import Banner from "../components/Banner/Banner"
-import Collapses from "../components/Collapses/Collapses"
+import CollapsesList from "../components/CollapsesList/CollapsesList"
+import imageBanner from '../assets/image-banner-A-propos.jpg'
 
 
 const APropos = () => (
     <>
         <main>
-            <section>
-                <Banner />
-            </section>
-            <section>
-                <Collapses />
-            </section>
+            <Banner
+                backgroundImage={imageBanner}
+                ImageAlt="Vue d'une vallée au creux de montagnes enneigées."
+                opacity={0.7} />
+            <CollapsesList />
         </main>
     </>
 )

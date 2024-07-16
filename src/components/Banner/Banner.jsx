@@ -1,5 +1,3 @@
-
-
 const Banner = ({ backgroundImage, ImageAlt, text, opacity }) => (
     <section className="banner">
         <img className="banner__img" src={backgroundImage} alt={ImageAlt} style={{opacity: opacity}} />

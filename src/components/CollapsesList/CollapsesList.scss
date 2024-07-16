@@ -1,0 +1,8 @@
+.collapsesList {
+    max-width: 1020px;
+    margin: 30px 210px 30px 210px;
+
+    @media(max-width: 740px){
+        margin: 30px 20px 30px 20px;
+    }
+}
