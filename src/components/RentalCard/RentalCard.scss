@@ -10,9 +10,11 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    text-decoration: none;
     &__img  {
         height: 75%;
         object-fit: cover;
+        border-radius: 10px 10px 0 0;
     }
     &__content {
         height: 25%;
@@ -25,7 +27,7 @@
         color: rgba(255, 255, 255, 1);
         font-size: 18px;
         font-weight: 700;
-        width: 30%;
+        text-decoration: none;
     }
 
     @media(max-width: 1447px){

@@ -1,12 +1,13 @@
-import imageCard from '../../assets/Rectangle 1.png'
+import { Link } from 'react-router-dom'
 
-const RentalCard = () => (
-    <div className="card">
-        <img className="card__img" src={imageCard} alt="" />
+
+const RentalCard = ({id, title, cover}) => (
+    <Link to={`/fiche-logement/${id}`} className="card">
+        <img className="card__img" src={cover} alt={title} />
         <div className='card__content'>
-            <h3 className="card__title">Titre de la location</h3>
+            <h3 className="card__title">{title}</h3>
         </div>
-    </div>
+    </Link>
 )
 
 export default RentalCard
