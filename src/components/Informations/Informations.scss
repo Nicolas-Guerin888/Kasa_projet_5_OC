@@ -1,0 +1,94 @@
+@import '../../settings.scss';
+
+.informations {
+    margin: 0 100px 0 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    &__title {
+        max-width: 700px;
+        font-size: 36px;
+        font-weight: 500;
+        color: $main-color;
+        margin-top: 32px;
+    }
+    &__location {
+        font-size: 18px;
+        font-weight: 500;
+        margin-top: 8px;
+    }
+    &__tags {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__host {
+        height: 64px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-top: 24px;
+        &--name {
+            color: $main-color;
+            font-size: 18px;
+            font-weight: 500;
+            max-width: 100px;
+            text-align: end;
+        }
+        &--picture {
+            height: 100%;
+            border-radius: 50%;
+            object-fit: contain;
+            margin-left: 10px;
+        }        
+    }
+
+    @media(max-width: 740px){
+        margin: 0 20px 0 20px;
+        flex-direction: column;
+        &__title {
+            font-size: 18px;
+            margin-top: 16px;
+        }
+        &__location {
+            font-size: 14px;
+        }
+        &__right {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items:end ;
+        margin-top: 8px;
+        }
+        &__host {
+            height: 33px;
+            margin-top: 0;
+            &--name {
+                font-size: 12px;
+                max-width: 80px;
+            }
+        }
+    }
+
+}
+
+.collapses {
+    margin: 24px 100px 48px 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    &__description, 
+    &__equipements {
+        width: 47%;
+    }
+
+    @media(max-width: 740px){
+        margin: 0 20px 32px 20px;
+        flex-direction: column;
+        &__description,
+        &__equipements {
+        width: 100%;
+        margin-top: 20px;
+        }
+    }
+
+}

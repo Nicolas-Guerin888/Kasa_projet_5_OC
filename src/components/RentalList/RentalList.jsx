@@ -12,7 +12,11 @@ const RentalList = () => {
     return (
     <section className="rentalList">
         {rentals.map(rental => (
-            <RentalCard key={rental.id} id={rental.id} title={rental.title} cover={rental.cover} />
+            <RentalCard key={rental.id} 
+                id={rental.id} 
+                title={rental.title} 
+                cover={rental.cover} 
+            />
         ))}
     </section>
     )

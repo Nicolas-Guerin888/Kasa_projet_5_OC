@@ -1,0 +1,16 @@
+.rating {
+    margin-top: 32px;
+    &__star {
+        margin-left: 16px;
+    }
+
+    @media(max-width: 740px){
+        margin-top: 0;
+        &__star {
+        height: 16px;
+        margin-left: 0;
+        margin-right: 8px;
+    }
+}
+
+}

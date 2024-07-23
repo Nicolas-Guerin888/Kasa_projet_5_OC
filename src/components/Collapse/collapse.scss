@@ -21,11 +21,26 @@
     &__button {
         all: unset;
     }
+    &__button-mobile {
+        all: unset;
+        display: none;
+    }
+    &__content {
+        &.open {
+            display: block;
+        }
+        &.closed {
+            display: none;
+        }
+    }
     &__text {
         padding : 20px;
         font-size: 18px;
+        line-height: 1.4;
+        &--list {
+            list-style-type: none;
+        }
     }
-
 
     @media(max-width: 1080px){
         &__title {
@@ -38,6 +53,12 @@
         }
         &__text {
             font-size: 12px;
+        }
+        &__button {
+            display: none;
+        }
+        &__button-mobile {
+            display: block;
         }
     }
 }

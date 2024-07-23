@@ -11,7 +11,7 @@ const Router = () => (
     <Header /> 
         <Routes>
             <Route path="/" Component={Home}/>
-            <Route path="/fiche-logement" Component={FicheLogement}/>
+            <Route path="/fiche-logement/:id" Component={FicheLogement}/>
             <Route path="/a-propos" Component={APropos} />
             <Route path="/*" Component={Error404}/>
         </Routes>
