@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Home from "../pages/Home"
 import FicheLogement from "../pages/Fiche-logement"
 import Error404 from "../pages/Error-404"
@@ -10,10 +10,11 @@ const Router = () => (
     <BrowserRouter>
     <Header /> 
         <Routes>
-            <Route path="/" Component={Home}/>
-            <Route path="/fiche-logement/:id" Component={FicheLogement}/>
-            <Route path="/a-propos" Component={APropos} />
-            <Route path="/*" Component={Error404}/>
+            <Route path="/" element={<Home />} />
+            <Route path="/fiche-logement/:id" element={<FicheLogement />} />
+            <Route path="/a-propos" element={<APropos />} />
+            <Route path="*" element={<Navigate to="/404" />} />
+            <Route path="/404" element={<Error404 />} />        
         </Routes>
     <Footer />
     </BrowserRouter>

@@ -1,22 +1,24 @@
-import React, { useState } from 'react';
+import React, { useState } from 'react'
 import next from '../../assets/Next.png'
 import prev from '../../assets/Prev.png'
 import nextMobile from '../../assets/Next-mobile.png'
 import prevMobile from '../../assets/Prev-mobile.png'
 
 const Carrousel = ({ title, pictures }) => {
-    const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+    // Cette ligne initialise l'état local "currentImageIndex" à 0
+    const [currentImageIndex, setCurrentImageIndex] = useState(0)
 
     const prevImage = () => {
-        // Si on est à la première image, on passe à la dernière image
-        const newIndex = currentImageIndex === 0 ? pictures.length - 1 : currentImageIndex - 1;
+        // Si l'index est à 0 (image 1), alors, ce code affichera la dernière image du tableau. Sinon il décrémente. 
+        const newIndex = currentImageIndex === 0 ? pictures.length - 1 : currentImageIndex - 1
         setCurrentImageIndex(newIndex);
     };
 
     const nextImage = () => {
-        // Si on est à la dernière image, on passe à la première image
-        const newIndex = currentImageIndex === pictures.length - 1 ? 0 : currentImageIndex + 1;
-        setCurrentImageIndex(newIndex);
+        // Si l'index actuel est égale à l'index de la dernière page, alors, ce code affichera l'image 1 (indoex 0). Sinon il incrémente. 
+        const newIndex = currentImageIndex === pictures.length - 1 ? 0 : currentImageIndex + 1
+        setCurrentImageIndex(newIndex)
     };
 
     return (
@@ -30,7 +32,7 @@ const Carrousel = ({ title, pictures }) => {
             <img
                 className="carrousel__img"
                 src={pictures[currentImageIndex]}
-                alt={`${title} ${currentImageIndex + 1}`}
+                alt={`${title}`}
             />
             <button className='carrousel__button carrousel__button--next' onClick={nextImage}>
                 <img src={next} alt="Suivant" />
@@ -43,7 +45,7 @@ const Carrousel = ({ title, pictures }) => {
                     {currentImageIndex + 1}/{pictures.length}
                 </p>}
         </section>
-    );
-};
+    )
+}
 
-export default Carrousel;
+export default Carrousel

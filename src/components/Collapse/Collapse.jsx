@@ -1,11 +1,11 @@
-import { useState } from "react";
-import boutonOpen from '../../assets/Vector open.png';
-import boutonClose from '../../assets/Vector close.png';
+import { useState } from "react"
+import boutonOpen from '../../assets/Vector open.png'
+import boutonClose from '../../assets/Vector close.png'
 import boutonOpenMobile from '../../assets/open-mobile.png'
 import boutonCloseMobile from '../../assets/close-mobile.png'
 
 const Collapse = ({title, text, list}) => {
-    const [isOpen, setIsOpen] = useState(false);
+    const [isOpen, setIsOpen] = useState(false)
 
     
     return (
@@ -31,7 +31,7 @@ const Collapse = ({title, text, list}) => {
                 )}
             </div>        
         </div>
-    );
+    )
 }
 
 export default Collapse

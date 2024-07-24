@@ -39,7 +39,6 @@ const Informations = ({title, location, host, tags, description, equipments, rat
         </section>
         </>
     )
-    
 }
 
 export default Informations

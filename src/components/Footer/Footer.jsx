@@ -1,6 +1,5 @@
 import logo from '../../assets/LOGO.footer.png'
 
-
 const Footer = () => (
     <>
         <footer className='footer'>

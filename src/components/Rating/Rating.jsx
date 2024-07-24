@@ -1,6 +1,6 @@
-import React from 'react';
-import starColor from '../../assets/Star-color.png';
-import starGrey from '../../assets/Star-grey.png';
+import React from 'react'
+import starColor from '../../assets/Star-color.png'
+import starGrey from '../../assets/Star-grey.png'
 
 const Rating = ({ rating }) => {
     const totalStars = 5;
@@ -15,8 +15,8 @@ const Rating = ({ rating }) => {
                 />
             ))}
         </div>
-    );
-};
+    )
+}
 
 
 
