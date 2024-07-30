@@ -8,7 +8,7 @@ const APropos = () => (
         <main>
             <Banner
                 backgroundImage={imageBanner}
-                ImageAlt="Vue d'une vallée au creux de montagnes enneigées."
+                imageAlt="Vue d'une vallée au creux de montagnes enneigées."
                 opacity={0.7} />
             <CollapsesList />
         </main>

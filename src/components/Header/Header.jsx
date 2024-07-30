@@ -23,7 +23,7 @@ const Header = () => (
                         </NavLink>
                     </li>
                     <li className='header__item'>
-                        <NavLink to="/a-propos" className={({ isActive }) => isActive ? 'header__link active-link' : 'header__link'}
+                        <NavLink to="about" className={({ isActive }) => isActive ? 'header__link active-link' : 'header__link'}
                         >
                             À Propos
                         </NavLink>

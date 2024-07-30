@@ -5,7 +5,7 @@ import { useEffect, useState } from "react"
 import data from '../data/data.json'
 
 
-const FicheLogement = () => {
+const HouseSheet = () => {
     // Cette ligne permet de récupérer l'ID du logement à partir de l'URL
     const { id } = useParams()
 
@@ -50,4 +50,4 @@ const FicheLogement = () => {
     )
 }
 
-export default FicheLogement
+export default HouseSheet

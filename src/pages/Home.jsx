@@ -7,7 +7,7 @@ const Home = () => (
         <main>
             <Banner 
                 backgroundImage={imageBanner}
-                ImageAlt="Vue en plongée d'une falaise et de l'océan, sur un fond de ciel nuageux."
+                imageAlt="Vue en plongée d'une falaise et de l'océan, sur un fond de ciel nuageux."
                 text="Chez vous, partout et ailleurs"
                 opacity={0.3} />
             <RentalList />
